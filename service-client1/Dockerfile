@@ -2,8 +2,8 @@ FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-COPY target/eureka-server-0.0.1-SNAPSHOT.jar eureka-server.jar
+COPY target/service-client1-0.0.1-SNAPSHOT.jar service-client1.jar
 
-EXPOSE 8761
+EXPOSE 8081
 
-ENTRYPOINT ["java", "-jar", "eureka-server.jar"]
+ENTRYPOINT ["java", "-jar", "service-client1.jar"]
